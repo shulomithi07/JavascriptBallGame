@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    background: black;
+}
+
+#score{
+    position: fixed;
+    color: antiquewhite;
+    user-select: none;
+}
+
+
+#modalEL{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-color:rgba(171, 183, 183, 1);
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+#points{
+    color:rgb(54, 54, 46);
+
+}
+
+#startGameBtn{
+    background-color: rgba(52, 73, 94, 1);
+    color:beige;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+}
+
+@media only screen and (max-width : 760px) {
+    #modalEL {
+        width:100%;
+        height: 200px;
+        left: 0%;
+    }
+
+    #points{
+        font-size: 19px;;
+        user-select: none;
+    }
+
+    #startGameBtn{
+        color:beige;
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        user-select: none;
+    }
+
+    #bigScoreEl{
+        user-select: none;
+    }
+   }  
